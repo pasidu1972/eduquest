@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>p quest</title>
+    <link rel="icon" href="img/Logop.png">
+</head>
+<style>
+    .bg {
+        width: 100%;
+        height: 3880px;
+        background: #0D1117;
+    }
+
+    .first {
+        width: 217px;
+        height: 217px;
+        flex-shrink: 0;
+        border-radius: 108.5px;
+        background: #686868;
+        filter: blur(96.5px);
+        margin-left: 300px;
+        margin-top: 200px;
+    }
+
+    .second {
+        width: 345.714px;
+        height: 308px;
+        flex-shrink: 0;
+        border-radius: 345.714px;
+        background: #A72262;
+        filter: blur(139px);
+        margin-left: 800px;
+    }
+
+    .menu {
+        width: 100%;
+        height: 88px;
+        flex-shrink: 0;
+        background: #0D1117;
+        justify-content: center;
+
+    }
+
+    .menuicone {
+        margin-top: -80px;
+        margin-left: 550px;
+
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        justify-content: center;
+        display: flex;
+        gap: 60px;
+
+
+    }
+
+    .subbut {
+        border-radius: 49px;
+        background: #A72262;
+        display: inline-flex;
+        padding: 16px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: -23px;
+        color: aliceblue;
+    }
+
+    .ptext {
+
+        color: #909090;
+        font-family: Plus Jakarta Sans;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.92px;
+        justify-content: center;
+        display: flex;
+
+
+    }
+
+    .ttext {
+        color: #F44A9B;
+        font-family: Plus Jakarta Sans;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.92px;
+
+    }
+
+    .t1 {
+        margin-top: 70px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .wbut {
+        display: inline-flex;
+        padding: 18px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 49px;
+        border: 1.6px solid #FFF;
+        margin-left: 750px;
+        margin-top: 50px;
+
+
+
+
+    }
+
+    .fc {
+        color: #E1E1E1;
+        font-family: Plus Jakarta Sans;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+    }
+
+    .fc2 {
+        color: #F44A9B;
+        font-family: Plus Jakarta Sans;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+    }
+
+    .cours {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: -200px;
+    }
+
+    .c1 {
+        width: 380px;
+        height: 450px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #211E1F;
+    }
+
+    .c2 {
+        width: 380px;
+        height: 450px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #211E1F;
+    }
+
+    .c3 {
+
+        width: 380px;
+        height: 450px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #211E1F;
+
+    }
+
+    .course {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        margin-top: 70px;
+    }
+
+    .ct1 {
+        color: #E1E1E1;
+        font-family: Plus Jakarta Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+
+    }
+
+    .buybt {
+        border-radius: 49px;
+        background: #A72262;
+        display: inline-flex;
+        padding: 16px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 120px
+    }
+
+    .num1 {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.8px;
+
+    }
+
+    .number {
+        display: flex;
+        gap: 30px;
+        margin-top: 60px;
+        margin-left: 750px;
+    }
+
+    .vlist {
+        width: 100%;
+        height: 650px;
+        flex-shrink: 0;
+        background: #0D264C;
+        margin-top: 80px;
+
+    }
+
+    .wround {
+        width: 514px;
+        height: 578.453px;
+        flex-shrink: 0;
+        border-radius: 578.453px;
+        background: #1A4484;
+        filter: blur(124.5px);
+        margin-left: 150px;
+    }
+
+    .pround {
+        width: 346px;
+        height: 287px;
+        flex-shrink: 0;
+        border-radius: 346px;
+        background: #A72262;
+        filter: blur(139px);
+        margin-top: 120px;
+        margin-left: 380px;
+    }
+
+    .r {
+        display: flex;
+    }
+
+    .t {
+        width: 400px;
+        height: 42px;
+        color: #E1E1E1;
+        font-family: Plus Jakarta Sans;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        margin-left: 200px;
+
+    }
+
+    .menu-item {
+        display: inline-block;
+        margin: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: color 0.3s;
+        /* Smooth transition for text color change */
+    }
+
+    .menu-item:hover {
+        color: #A72262;
+        /* New text color on hover */
+    }
+
+    /* Style the icons specifically */
+    .menu-item i {
+        margin-right: 5px;
+        /* Add some spacing between the icon and text */
+        transition: transform 0.3s;
+        /* Smooth transition for icon scaling */
+    }
+
+    .menu-item:hover i {
+        transform: scale(1.2);
+        /* Increase the icon size on hover */
+    }
+
+    .v1 {
+        width: 350px;
+        height: 314px;
+        flex-shrink: 0;
+        margin-top: -500px;
+    }
+
+    .vl {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .vt {
+        color: #B6D0FB;
+        font-family: Plus Jakarta Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.56px;
+        margin-left: 25px;
+    }
+
+    .vt1 {
+        color: #83B1FC;
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.56px;
+        margin-top: 100px;
+        margin-left: 60px;
+    }
+
+    .vul {
+        width: 150px;
+        height: 2px;
+        border-radius: 16px;
+        background: #83B1FC;
+        margin-left: 65px;
+    }
+
+    .blogt {
+        color: #E1E1E1;
+        font-family: Plus Jakarta Sans;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        margin-top: 100px;
+        margin-left: 750px;
+
+    }
+
+    .b1 {
+        width: 350px;
+        height: 380px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #211E1F;
+    }
+
+    .blist {
+        justify-content: center;
+        display: flex;
+        gap: 85px;
+        margin-top: 100px;
+    }
+
+    .blist2 {
+        justify-content: center;
+        display: flex;
+        gap: 85px;
+        margin-top: 100px;
+    }
+
+    .btext {
+        color: #E1E1E1;
+        font-family: Plus Jakarta Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .brt {
+        color: rgba(255, 144, 197, 0.68);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.64px;
+        margin-top: 20px;
+        margin-left: 95px;
+    }
+
+    .et {
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        margin-top: 110px;
+        margin-left: 630px;
+    }
+
+    .et1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.56px;
+        width: 624px;
+        margin-top: 60px;
+        margin-left: 590px;
+    }
+
+    .subbox {
+        width: 400px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: rgba(214, 61, 134, 0.29);
+        margin-top: 50px;
+        margin-left: 670px;
+        display: flex;
+    }
+
+    .subbt {
+        border-radius: 30px;
+        background: #A72262;
+        display: inline-flex;
+        padding: 16px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 120px
+    }
+
+    .footer {
+        width: 1308px;
+        height: 352px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: rgba(214, 61, 134, 0.30);
+        margin-top: 70px;
+        margin-left: 200px;
+    }
+
+    .fc {
+        width: 194px;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.56px;
+        margin-left: 60px;
+    }
+
+    .fm {
+        width: 140px;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+        margin-left: 600px;
+        margin-top: -200px;
+    }
+
+    .link {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .exlink {
+        width: 130px;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+        margin-left: 950px;
+        margin-top: -152px;
+    }
+
+    .elink {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        margin-top: 30px;
+        gap: 10px;
+        margin-left: 710px;
+    }
+
+
+
+
+            /* Keyframes animation for the word "Welcome" */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY();
+    }
+    50% {
+        transform: translateY(-35px);
+    }
+}
+/* Apply animation to the word */
+.animated-word {
+    font-size: 19px;
+    animation: bounce 2s ease infinite; /* Adjust animation duration and properties as needed */
+    color: #eaf0f6; /* Change color as desired */
+    
+    margin-left: 700px;
+    margin-top: -50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+
+    <div class="menu">
+        <img src="img/logo2.png" alt="" style="margin-left: 90px;">
+        <div class="menuicone">
+            <a class="menu-item" href="home.php">Home</a>
+            <a class="menu-item" href="aboutus.php">about us </a>
+            <a class="menu-item" href="sirvise.php">sirvise</a>
+            <a class="menu-item" href="projecs.php">projects</a>
+            <a class="menu-item" href="javascript:void(0);" id="contact-link">contact us</a>
+
+            <div class="subbut">
+                <img src="img/yicon.png" alt="">
+                SUBSCRIBE
+            </div>
+        </div>
+
+    </div>
+    <div class="bg">
+        <div class="ptext">
+            <div class="t1">
+                Profit
+                <div class="ttext"> quest</div>
+            </div>
+        </div>
+        <div class="wbut">
+            <img src="img/wicone.png" alt="">
+            <div class="wtext"
+                style="color: aliceblue; font-size: 23px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                whatsapp</div>
+        </div>
+        <div class="first">
+            img
+
+            <div class="second">
+                img
+            </div>
+
+        </div>
+
+
+        <div class="cours">
+            <div class="fc"> OUR </div>
+            <div class="fc2"> COURSE </div>
+
+        </div>
+
+        <div class="course">
+            <div class="c1"><img src="img/java (2).png" alt="" style="width: 100%;">
+                <div class="ct1">HTML, CSS, and Javascript for Web
+                    Developers </div>
+                <div class="cbt1">
+
+                    <div class="buybt">
+                        <div class="bt" style="font-size: 17px; color: #FFF;">BUY NOW</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="c2"><img src="img/java (1).png" alt="" style="width: 100%;">
+                <div class="ct1">HTML, CSS, and Javascript for Web
+                    Developers</div>
+                <div class="cbt1">
+
+                    <div class="buybt">
+                        <div class="bt" style="font-size: 17px; color: #FFF;">BUY NOW</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="c3"><img src="img/java (3).png" alt="" style="width: 100%;">
+                <div class="ct1">HTML, CSS, and Javascript for Web
+                    Developers</div>
+                <div class="cbt1">
+
+                    <div class="buybt">
+                        <div class="bt" style="font-size: 17px; color: #FFF;">BUY NOW</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="number">
+            <div class="num1">1</div>
+            <div class="num1">2</div>
+            <div class="num1">3</div>
+            <div class="num1">4</div>
+            <img src="img/arrow.png" alt="" style="height: 25px;">
+        </div>
+
+        <div class="vlist">
+            <div class="t">Video Playlist</div>
+            <div class="uline" style="width: 349px;
+    height: 4px;border-radius: 1px;
+background: linear-gradient(90deg, #87A3D0 0%, #406BA9 100%); margin-left: 200px;"></div>
+            <div class="r">
+                <div class="wround"></div>
+                <div class="pround"></div>
+            </div>
+
+
+            <div class="vl">
+
+                <div class="v1">
+                    <img src="img/v1.png" alt="" style="width: 100%;">
+
+                    <div class="vt">
+                        Youtube Growth
+                    </div>
+                    <div class="vt1">Youtube Growth</div>
+
+                    <div class="vul"></div>
+
+                </div>
+
+                <div class="v1">
+                    <img src="img/v1.png" alt="" style="width: 100%;">
+
+                    <div class="vt">
+                        Youtube Growth
+                    </div>
+                    <div class="vt1">Youtube Growth</div>
+                    <div class="vul"></div>
+
+                </div>
+
+
+                <div class="v1">
+                    <img src="img/v1.png" alt="" style="width: 100%">
+
+                    <div class="vt">
+                        Youtube Growth
+                    </div>
+                    <div class="vt1">Youtube Growth</div>
+                    <div class="vul"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="blogt">
+            BLOGE
+        </div>
+        <div class="blist">
+            <div class="b1">
+                <img src="img/Rectangle 14 (1).png" alt="" style="width: 100%;">
+                <div class="btext">
+                    How to make PASSIVE income with a FACELESS youtube channel using FREE AI tools | ChatGPT & Capcut
+                </div>
+
+                <div class="brt">
+                    Read more...
+                </div>
+            </div>
+
+            <div class="b1">
+                <img src="img/Rectangle 14 (2).png" alt="" style="width: 100%;">
+                <div class="btext">
+                    How to make PASSIVE income with a FACELESS youtube channel using FREE AI tools | ChatGPT & Capcut
+                </div>
+                <div class="brt">
+                    Read more...
+                </div>
+
+            </div>
+
+            <div class="b1">
+                <img src="img/Rectangle 14 (3).png" alt="" style="width: 100%;">
+                <div class="btext">
+                    How to make PASSIVE income with a FACELESS youtube channel using FREE AI tools | ChatGPT & Capcut
+                </div>
+                <div class="brt">
+                    Read more...
+                </div>
+
+            </div>
+        </div>
+
+        <div class="blist2">
+
+            <div class="b1">
+                <img src="img/Rectangle 14 (4).png" alt="" style="width: 100%;">
+                <div class="btext">
+                    How to make PASSIVE income with a FACELESS youtube channel using FREE AI tools | ChatGPT & Capcut
+                </div>
+                <div class="brt">
+                    Read more...
+                </div>
+
+            </div>
+
+            <div class="b1">
+                <img src="img/Rectangle 14 (5).png" alt="" style="width: 100%;">
+                <div class="btext">
+                    How to make PASSIVE income with a FACELESS youtube channel using FREE AI tools | ChatGPT & Capcut
+                </div>
+                <div class="brt">
+                    Read more...
+                </div>
+
+            </div>
+
+
+
+            <div class="b1">
+                <img src="img/Rectangle 14.png" alt="" style="width: 100%;">
+                <div class="btext">
+                    How to make PASSIVE income with a FACELESS youtube channel using FREE AI tools | ChatGPT & Capcut
+                </div>
+                <div class="brt">
+                    Read more...
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="number">
+            <div class="num1">1</div>
+            <div class="num1">2</div>
+            <div class="num1">3</div>
+            <div class="num1">4</div>
+            <img src="img/arrow.png" alt="" style="height: 25px;">
+        </div>
+
+
+
+        <div class="et">
+            Subscribe our Newsletter
+        </div>
+
+        <div class="et1">
+            Join us to get the things I learn about WordPress, how to do an online business and things you think will be
+            important to your inbox by email.
+        </div>
+
+        <div class="subbox">
+            <div class="subt" style="color: #C285A2;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.64px;">
+
+                Enter your email
+
+            </div>
+            <div class="subbt">
+                <div class="bt" style="font-size: 17px; color: #FFF;">BUY NOW</div>
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+
+            <img src="img/Logop.png" alt="" style="width: 150px;
+            height: 150px;
+            flex-shrink: 0; margin-top: 95px; margin-left: 80px;">
+
+            <div class="fc">
+                2023 profit quest
+            </div>
+
+
+            <div class="fm">
+                Internal Links
+
+
+            </div>
+            <div class="link">
+
+                Home <br>
+                course<br>
+                Blog<br>
+                Playlist
+                <br>contact us
+            </div>
+
+            <div class="exlink">
+                External Link
+            </div>
+            <div class="elink">
+
+                Home <br>
+                course<br>
+                Blog<br>
+                Playlist
+                <br>contact us
+            </div>
+        </div>
+
+        <div class="animated-word">All Rights Reserved.
+
+            Designed by  &COPY;SYNAP Solutions</div>
+    </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
